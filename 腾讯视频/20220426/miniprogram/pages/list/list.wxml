@@ -1,0 +1,8 @@
+<!-- bindinput实时获取表单元素的值 -->
+<textarea bindinput="getcon" name="" id="" cols="30" rows="10"></textarea>
+<button type="primary" bindtap="send">发布</button>
+
+<view wx:for="{{list}}"> 
+  <text>{{item.con}}</text>
+  <text>{{item.date}}</text>
+</view>

@@ -1,0 +1,6 @@
+/* pages/list/list.wxss */
+textarea{
+  border:1px solid red;
+  width:600rpx;
+  margin-left: 75rpx;
+}

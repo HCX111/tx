@@ -1,0 +1,153 @@
+.header{
+    padding: 20rpx;
+    background: #0f0f1e;
+}
+.header image{
+    width: 180rpx;
+    float: left;
+    margin-right: 10rpx;
+}
+.header view{
+    float: left;
+    background: linear-gradient(90deg,#5dcf0c 0,#2dbe8f 30%,#03b0ff);
+    border-radius: 40rpx;
+}
+.header input{
+    width: 420rpx;
+    height: 20rpx;
+    margin: 1px;
+    background: #0f0f1e;
+    border-radius: 40rpx;
+    color:#fff;
+    padding: 4px;
+}
+.header navigator{
+    float: right;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    top: 4px;
+}
+.menu>text{
+    float: left;
+    margin-right: 20rpx;
+    font-size: 14px;
+    color: #333;
+}
+.menu{
+    margin: 10rpx 20rpx;
+}
+.menu view {
+    float: right;
+    font-size: 14px;
+}
+.menu view text{
+    width: 6px;
+    height: 6px;
+    border-left: 1px solid #333;
+    border-bottom: 1px solid #333;
+    display: inline-block;
+    transform: rotate(-45deg);
+    margin-left: 10rpx;
+    position: relative;
+    top: -3px;
+}
+.menu .current{
+    color: orange;
+}
+.menu .cur{
+    color: orange;
+}
+.menu .cur text{
+    border-left: 1px solid orange;
+    border-bottom: 1px solid orange;
+    transform: rotate(-225deg);
+    top: 0px;
+}
+.details{
+    margin: 20rpx;
+}
+.details view{
+    margin: 10px 0px;
+    font-size: 14px;
+}
+.details text{
+    margin-right: 20rpx;
+}
+.details .first{
+    color:#fff;
+    background: orange;
+    padding: 2px;
+}
+.details view:nth-of-type(1){
+    margin-bottom: 20px;
+}
+.menus{
+    margin: 20rpx;
+}
+.menus>.left{
+    float: left;
+    width: 290rpx;
+    margin-right: 20rpx;
+}
+.menus .right{
+    float: right;
+    width: 400rpx;
+}
+.menus .bottom{
+    width: 710rpx;
+    float: left;
+    margin-top: 20rpx;
+}
+.menus .bottom view{
+    float: left;
+    width: 118rpx;
+    text-align: center;
+    border-right: 1px solid #999 ;
+    font-size: 14px;
+    color: #999;
+    box-sizing: border-box;
+}
+.menus .bottom view:nth-of-type(6){
+    border-right: none;
+}
+.menus .spe view{
+    width: 710rpx;
+    float: none;
+    margin-top: 20rpx;
+    border-right: none;
+    border-bottom: 1px solid #999;
+    text-align: left;
+}
+.menus .right view{
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10rpx;
+}
+.menus .right view text{
+    color: orange; 
+}
+.menus .right view text{
+    color: orange;
+}
+.menus .right{
+    position: relative;
+    height: 406.7rpx;
+}
+.menus .right .free{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    background: orange;
+    color: #fff;
+    padding: 4px 10px;
+}
+.menus .vip{
+    position: absolute;
+    width: 100rpx;
+    left: 200rpx;
+    top: -4px;
+}
+.menus{
+    position: relative;
+}

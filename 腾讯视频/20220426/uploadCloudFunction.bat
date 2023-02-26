@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Tencent\微信web开发者工具\cli.bat" cloud functions deploy --e zsh-gmx9p --n quickstartFunctions --r --project "E:\zsh\20220308\mydemo" --report_first --report

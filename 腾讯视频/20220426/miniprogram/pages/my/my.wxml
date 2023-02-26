@@ -1,0 +1,6 @@
+<!-- 小程序本地文件大小只能限制2M -->
+<!-- audio不支持云平台直接地址cloud的音乐
+     可以支持云平台下载地址
+ -->
+<audio src="https://7a73-zsh-gmx9p-1257218395.tcb.qcloud.la/aa.m4a?sign=b23a10e894c658d6f29f32f0ebbe5095&t=1646964748" controls="true"></audio>
+

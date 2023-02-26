@@ -1,0 +1,5 @@
+<image class="{{num==0?'paused':''}}" bindtap="change"  src="../../images/pic.jpg" mode="widthFix"></image>
+<video src="cloud://zsh-gmx9p.7a73-zsh-gmx9p-1257218395/bb.mp4" controls="" 	danmu-list="{{danmuList}}" id="myVideo" enable-danmu danmu-btn controls></video>
+<!-- bindinput实时获取表单元素的值 -->
+<input type="text" placeholder="请输入弹幕内容" bindinput="danmu"/>
+<button bindtap="getcon">按钮</button>

@@ -1,0 +1,64 @@
+<!--pages/details/details.wxml-->
+<text>{{title}}</text>
+<video src="{{src}}"></video>
+
+<swiper indicator-dots="true" indicator-active-color="orange">
+    <swiper-item>
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/160.jpg" mode="heightFix"></image>
+        <text>影视女主人设天花板——李宁玉，不接受反驳！</text>
+        <navigator>打开</navigator>
+    </swiper-item>
+    <swiper-item>
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/160.jpg" mode="heightFix"></image>
+        <text>影视女主人设天花板——李宁玉，不接受反驳！</text>
+        <navigator>打开</navigator>
+    </swiper-item>
+    <swiper-item>
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/160.jpg" mode="heightFix"></image>
+        <text>影视女主人设天花板——李宁玉，不接受反驳！</text>
+        <navigator>打开</navigator>
+    </swiper-item>
+</swiper>
+<view class="detail">
+    <text>名侦探柯南 普通话版</text>
+    <view class="score">
+        <text>9.6 分 .</text>
+        <text class="vip">VIP</text>
+        <text>· 更新至1095集 · 全1112集 · 52.5亿次播放</text>
+    </view>
+    <view >
+        <text class="left">专辑列表</text>
+        <text class="right">每周六19点30更新1集</text>
+    </view>
+</view>
+<scroll-view scroll-x="true">
+    <view wx:for="{{list}}">{{item}}</view>
+</scroll-view>
+<view class="hot  {{index==2||index==3?'down':''}}" wx:for="{{lists}}"> 
+         <text class="title">{{item.title}}</text>
+         <view>
+            <view wx:for="{{item.hots}}">
+            <!-- navigator路由实现页面跳转 url跳转地址 url="地址？k=v"-->
+             <navigator url="/pages/details/details?id={{index}}">
+                <image src="{{item.src}}" mode="widthFix"></image>
+                <text class="top">{{item.top}}</text>
+                <text class="des">{{item.des}}</text>
+             </navigator>
+            </view>
+         </view>
+</view>
+<view class="comment" wx:for="{{coms}}">
+    <text class="title">评论</text>
+    <view >
+        <view>
+            <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/20.jpg" mode="widthFix" class="logo"></image>
+            <text>都不重要</text>
+            <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/21.webp.jpg" mode="widthFix"  class="vip"></image>
+        </view>
+            <text class="des">{{item.con}}</text>
+    </view> 
+</view>
+<form action="" bindsubmit="send">
+<textarea name="con" placeholder="请输入评论内容" id="" cols="30" rows="10"></textarea>
+<button form-type="submit" type="primary">评论</button>
+</form>

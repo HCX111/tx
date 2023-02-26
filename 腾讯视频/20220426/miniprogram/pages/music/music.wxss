@@ -1,0 +1,20 @@
+/* pages/music/music.wxss */
+image{
+    width: 300rpx;
+    margin-left: 225rpx;
+    animation:move 2s infinite linear;
+}
+
+/* 定义动画 */
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.paused{
+    /* 停止动画 */
+    animation-play-state: paused;
+}

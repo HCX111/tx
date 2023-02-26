@@ -1,0 +1,19 @@
+<view class="logo">
+  <text class="left">头像</text>
+  <image src="{{src}}" mode="widthFix" class="right" bindtap="chooseImg"></image>
+</view>
+<view class="ni">
+  <text class="left">昵称</text>
+  <text bindtap="update">{{msg}}</text>
+  <input type="text" disabled="{{1==t}}" class="right" value="{{val}}" bindinput="getval"/>
+ 
+</view>
+<view class="number">
+  <text class="left">电话号</text>
+  <text class="right">8888</text>
+</view>
+<view class="pro">
+  <text class="left">职业与兴趣</text>
+  <text class="right">dasdas</text>
+</view>
+<button bindtap="quit" type="primary">退出登录</button>

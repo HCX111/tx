@@ -1,0 +1,58 @@
+<view class="header">
+    <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/k.png" mode="widthFix"></image>
+    <view>
+        <input type="text"/>
+    </view>
+    <navigator>返回</navigator>
+</view>
+<view class="menu">
+    <text class="current">相关</text>
+    <text>最新</text>
+    <text>最热</text>
+   <view class="{{num==0?'cur':''}}" bindtap="change">
+    筛选
+    <text></text>
+   </view>
+</view>
+<!-- <view class="details">
+    <view wx:for="{{details}}">
+        <text class="first">{{item.title}}</text>
+        <text wx:for="{{item.lists}}">{{item}}</text>
+    </view>
+</view> -->
+<view class="details" wx:if="{{num==0}}">
+    <view wx:for="{{details}}">
+        <text class="{{(index==0?(t0==-1):(index==1?(t1==-1):(t2==-1)))?'first':''}}" bindtap="change{{index}}" data-id="-1">{{item.title}}</text>
+        <text wx:for="{{item.lists}}" wx:for-index="indexn"  bindtap="change{{index}}" data-id="{{indexn}}" class="{{(index==0?(t0==indexn):(index==1?(t1==indexn):(t2==indexn)))?'first':''}}">{{item}}</text>
+    </view>
+  </view>
+  <view class="menus">
+    <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/r.png" class="vip" mode="widthFix" ></image>
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/l.jpg" class="left" mode="widthFix"></image>
+        <view class="right">
+            <view>[电视剧] <text>特战荣耀</text></view>
+            <view>2022 | 内地 | 动作 | 剧情</view>
+            <view>主演：杨洋 李一桐</view>
+            <view>来源：腾讯视频</view>
+            <view class="free">立即播放</view>
+        </view>
+        <view class="bottom">
+            <view wx:for="{{mvs}}">{{item}}</view>
+        </view>
+    </view>
+    <view class="menus">
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/r.png" class="vip" mode="widthFix" ></image>
+        <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/l.jpg" mode="widthFix" class="left"></image>
+        <view class="right">
+            <view>[电视剧] <text>特战荣耀</text></view>
+            <view>2022 | 内地 | 动作 | 剧情</view>
+            <view>主演：杨洋 李一桐</view>
+            <view>来源：腾讯视频</view>
+            <view class="free">立即播放</view>
+        </view>
+        <view class="bottom spe">
+            <view wx:for="{{mvs}}">{{item}}</view>
+        </view>
+    </view>
+  
+ 

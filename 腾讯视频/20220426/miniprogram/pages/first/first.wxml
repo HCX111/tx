@@ -1,0 +1,36 @@
+<view class="header">
+    <image src="cloud://cloud1-4gbwokwg02e88fc2.636c-cloud1-4gbwokwg02e88fc2-1309747500/tx/0.png" mode="widthFix"></image>
+    <navigator url="/pages/login/login">登录</navigator>
+    <navigator url="/pages/personal/personal">个人中心</navigator>a
+    <text >打开App</text>
+</view>
+   <scroll-view scroll-x="true">
+    <view wx:for="{{list}}" class="{{index==num?'current':''}}"  bindtap="change" data-id="{{index}}">
+        {{item}}
+        <text></text>
+    </view>
+   </scroll-view>
+   <swiper autoplay="true" circular="true">
+        <swiper-item wx:for="{{banners}}">
+            <image src="{{item.src}}" mode="widthFix"></image>
+            <view>
+                <text class="left">{{item.title}}</text>
+                <text class="right" >{{index+1}}/{{banners.length}}</text>
+            </view>
+        </swiper-item>
+   </swiper>
+   <view class="hot  {{index==2||index==3?'down':''}}" wx:for="{{lists}}"> 
+         <text class="title">{{item.title}}</text>
+         <view>
+            <view wx:for="{{item.hots}}">
+            <!-- navigator路由实现页面跳转 url跳转地址 url="地址？k=v"-->
+             <navigator url="/pages/details/details?id={{index}}">
+                <image src="{{item.src}}" mode="widthFix"></image>
+                <text class="top">{{item.top}}</text>
+                <text class="des">{{item.des}}</text>
+             </navigator>
+            </view>
+         </view>
+   </view>
+   
+  

@@ -1,0 +1,13 @@
+<!--pages/sign/sign.wxml-->
+<text class="title">这是注册页面</text>
+<form action="" bindsubmit="sign">
+    <label for="user">用户名</label>
+    <input type="text" id="user" placeholder-class="txt" name="user"
+     placeholder="请输入用户名"/>
+    <text class="tips">{{user}}</text>
+    <label for="pass">密码</label>
+    <input type="password" id="pass" name="pass" placeholder-class="txt" placeholder="请输入密码"/>
+    <text class="tips">{{pass}}</text>
+    <button type="primary" form-type="submit">注册</button>
+    </form>
+<navigator url="/pages/login/login">如果没有账户，请注册</navigator>

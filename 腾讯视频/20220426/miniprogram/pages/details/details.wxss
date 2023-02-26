@@ -1,0 +1,148 @@
+.title{
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+video{
+    width: 750rpx;
+}
+swiper{
+    margin: 10px 20rpx;
+    height: 140rpx;
+}
+swiper image{
+    float: left;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+swiper image{
+    float: left;
+    height: 80rpx;
+    margin-right: 20rpx;
+}
+swiper text{
+    width: 400rpx;
+    float: left;
+    font-size: 12px;
+}
+swiper navigator{
+    float: right;
+    margin-top: 2px;
+    font-size: 14px;
+    background: rgba(255, 165, 0, 0.1);
+    padding: 6px;
+    border-radius: 4px;
+    color: orange;
+}
+scroll-view{
+    white-space: nowrap;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+scroll-view view{
+    display: inline-block;
+    padding:20rpx;
+    min-width: 100rpx;
+    min-height: 100rpx;
+    text-align: center;
+    vertical-align: top;
+    max-width: 300rpx;
+    white-space: normal;
+    background: orange;
+    margin-right: 20rpx;
+    margin-top: 20rpx;
+}
+.detail{
+    margin: 0px 20rpx;
+}
+.detail .top{
+    font-size: 18px;
+    font-weight: bold;
+}
+.detail .score{
+    margin: 10rpx 0px;
+    font-size: 12px;
+    color: #666;
+}
+.detail .vip{
+    color:orange;
+    font-weight: bold;
+    font-size: 12px;
+}
+.detail .left{
+    float: left;
+    font-size: 12px;
+}
+.detail .right{
+    float: right;
+    color: #666;
+    font-size: 12px;
+    width: 600rpx;
+    /* 超出部分出现省略号 */
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-align: right;
+}
+.hot{
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+}
+.hot view view{
+    width: 350rpx;
+    float:left
+}
+.hot view view:nth-of-type(2n){
+    margin-left: 10rpx;
+}
+.hot image{
+    width: 350rpx;
+}
+.hot .title{
+    font-weight: bold;
+    margin-bottom: 20rpx;
+    display: block;
+    margin-top: 20rpx;
+    text-align: left;
+    font-size: 14px;
+    
+}
+.hot .top{
+    font-size: 14px;
+    display: block;
+    
+}
+.hot .des{
+    font-size: 12px;
+    display: block;
+    color: #999;
+    margin-bottom: 20rpx;
+    margin-top: 8rpx;
+}
+.comment{
+    margin: 0px 20rpx;
+}
+.comment .title{
+    font-size: 14px;
+    font-weight: bold;
+    margin:20rpx,0px;
+}
+.comment .logo{
+    /* 图片和文字同时存在的时候，垂直对齐 */
+    vertical-align: middle;
+    width: 100rpx;
+    border-radius: 50%;
+}
+.comment view view text{
+    margin-left: 20rpx;
+    font-size: 12px;
+}
+.comment .vip{
+    width: 80rpx;
+    vertical-align: middle;
+    margin-left: 30rpx;
+}
+.comment .des{
+    font-size: 12px;
+}

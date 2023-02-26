@@ -1,0 +1,12 @@
+<!--pages/login/login.wxml-->
+<text class="title">这是登入页面</text>
+
+<form action="" bindsubmit="login">
+    <label for="user">用户名</label>
+    <input type="text" id="user" name="user"  placeholder-class="txt" placeholder="请输入用户名"/>
+    <label for="pass">密码</label>
+    <input type="password" id="pass"  placeholder-class="txt" name="pass" placeholder="请输入密码"/>
+    <text class="tips">{{user}}</text>
+    <button type="primary" form-type="submit">登入</button>
+    </form>
+<navigator url="/pages/sign/sign">如果没有账户，请注册</navigator>

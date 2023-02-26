@@ -1,0 +1,6 @@
+<input type="text" bindinput="getuser" placeholder="请输入用户名"/>
+<input type="password"  bindinput="getpass"placeholder="请输入密码"/>
+<button bindtap="add">增加数据</button>
+<button bindtap="query">查询数据</button>
+<button bindtap="update">更新数据</button>
+<button bindtap="remove">删除数据</button>
